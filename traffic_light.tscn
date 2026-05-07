@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cw6nmurv0i70h"]
+
+[ext_resource type="Script" uid="uid://bym478qo8cyfn" path="res://traffic_light.gd" id="1_4ucqr"]
+
+[node name="traffic light" type="Node2D" unique_id=1853867364]
+script = ExtResource("1_4ucqr")
