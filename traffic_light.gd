@@ -1,17 +1,14 @@
 extends Node2D
 
 var radius = 5
-var green = Color.GREEN
-var amber = Color.ORANGE
-var red = Color.RED
+@export var green = Color.GREEN
+@export var amber = Color.ORANGE
+@export var red = Color.RED
 
 func assign_color():
 	## Assign the color GREEN to the material
-	var m:StandardMaterial3D = $MeshInstance3D.get_active_material(0
-	if randf() < 0.5:
-		m.albedo_color = green
-	else:
-		m.albedo_color = red
+	var m:StandardMaterial3D = $MeshInstance3D.get_active_material(0)
+	m.albedo_color = green
 
 func _ready() -> void:
 	var m:StandardMaterial3D = StandardMaterial3D.new()
